@@ -1,10 +1,10 @@
 import random
 
-print('this is a password generator')
-sym = input('would u like to include symbols: ').lower().replace(" ", "")
-num = input('would u like to use numbers: ').lower().replace(" ", "")
-cap = input('would u like to use capital letters: ').lower().replace(" ", "")
-len = int(input('enter length of password: '))
+print('This is a PASSWORD GENERATOR')
+sym = input('Would u like to include symbols: ').lower().replace(" ", "")
+num = input('Would u like to use numbers: ').lower().replace(" ", "")
+cap = input('Would u like to use capital letters: ').lower().replace(" ", "")
+len = int(input('Enter length of password: '))
 
 pass_char = 'abcdefghijklmnopqrstuvwxyz'
 
