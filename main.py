@@ -31,9 +31,9 @@ def menu():
         menu()
 
 def password():
-    sym = input('Would u like to include symbols: ').lower().replace(" ", "")
-    num = input('Would u like to use numbers: ').lower().replace(" ", "")
-    cap = input('Would u like to use capital letters: ').lower().replace(" ", "")
+    sym = input('Would you like to include symbols: ').lower().replace(" ", "")
+    num = input('Would you like to use numbers: ').lower().replace(" ", "")
+    cap = input('Would you like to use capital letters: ').lower().replace(" ", "")
     length = int(input('Enter length of password: '))
 
     pass_char = 'abcdefghijklmnopqrstuvwxyz'
@@ -46,14 +46,15 @@ def password():
         pass_char += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
     password =  ''.join(random.sample(pass_char, length))
-    print (f'Your {length} digit password is: {password}')
+    print(f'Your {length} digit password is: ')
+    print(f'{password}')
 
 def md5hash():
 
     pre_hash = input('Enter what you want to hash: ')
     post_hash = hashlib.md5(pre_hash.encode())
 
-    print("Your MD5 hash is: ", end ="") 
+    print("Your MD5 hash is: ")
     print(post_hash.hexdigest()) 
 
 
